@@ -7,14 +7,10 @@
         height: 240px;
       }
     </style>
-    <script src="https://rawgit.com/Intern-01/Intern-01.github.io/master/locomote.js"></script>
-    <script src="https://rawgit.com/Intern-01/Intern-01.github.io/master/jquery-3.2.1.min.js"></script>
+    <script src="locomote.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript">
 		var locomote;
-		function playLocomote()
-		{
-			locomote.play('rtsp://admin:passw0rd@10.211.9.92','http://admin:passw0rd@10.211.9.92:80/Streaming/channels/2/httppreview');
-		}
       $(document).ready(function() {
 		console.log('starting this function');
         /* Load SWF and instantiate Locomote */
@@ -29,7 +25,7 @@
           console.log('API is ready. `play` can now be called');
 
           /* Tell Locomote to play the specified media */
-          locomote.play('rtsp://admin:passw0rd@10.211.9.92');
+          locomote.play('httpm://plazacam.studentaffairs.duke.edu/mjpg/video.mjpg');
         });
 
         /* Start listening for streamStarted event */
